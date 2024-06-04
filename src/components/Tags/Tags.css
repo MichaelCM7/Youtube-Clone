@@ -1,0 +1,189 @@
+@media (min-width:501px) and (max-width: 1200px) {
+    .tags-block{
+        display: flex;
+        height: 55px;
+        width: 100%;
+        position: fixed;
+        top: 55px;
+        right: 0;
+        left: 0;
+        padding: 0px 60px 0px 10px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        z-index: 50;
+        overflow: scroll;
+    }
+    
+    .tags{
+        font-size: 14px;
+        border: none;
+        padding: 5px 10px;
+        background-color: rgb(225, 225, 225);
+        border-radius: 7px;
+        white-space: nowrap;
+        cursor: pointer;
+        margin: 0px 7px 0px 7px;
+    }
+
+    .tags:hover{
+        background-color: rgb(182, 182, 182);
+        opacity: 0.8;
+        color: white;
+    }
+
+    .tags:active{
+        background-color: black;
+        color: white;
+    }
+    
+    .edge-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 0;
+        background-color: white;
+        height: 55px;
+    }
+    
+    .scroll-btn{
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        border: none;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .scroll-btn:hover{
+        background-color: rgb(225, 225, 225);
+    }
+}
+
+@media (min-width: 1201px) {
+    .tags-block{
+        display: flex;
+        height: 55px;
+        width: 100%;
+        position: fixed;
+        top: 55px;
+        right: 0;
+        left: 0;
+        padding: 0px 60px 0px 10px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;    
+        z-index: 50;
+        overflow: scroll;
+    }
+
+    .tags{
+        font-size: 14px;
+        border: none;
+        padding: 5px 10px;
+        background-color: rgb(225, 225, 225);
+        border-radius: 7px;
+        white-space: nowrap;
+        cursor: pointer;
+        margin: 0px 7px 0px 7px;
+    }
+
+    .tags:hover{
+        background-color: rgb(182, 182, 182);
+        opacity: 0.8;
+        color: white;
+    }
+
+    .tags:active{
+        background-color: black;
+        color: white;
+    }
+    
+    .edge-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 0;
+        background-color: white;
+        height: 55px;
+    }
+    
+    .scroll-btn{
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        border: none;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .scroll-btn:hover{
+        background-color: rgb(225, 225, 225);
+    }
+}
+
+@media (max-width:500px) {
+    .tags-block{
+        display: none;
+        display: flex;
+        height: 55px;
+        position: fixed;
+        width: 100%;
+        top: 55px;
+        right: 0;
+        left: 0;
+        padding: 0px 60px 0px 10px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        z-index: 50;
+        overflow: scroll;
+    }
+    
+    .tags:hover{
+        background-color: rgb(182, 182, 182);
+        opacity: 0.8;
+        color: white;
+    }
+
+    .tags{
+        font-size: 14px;
+        border: none;
+        padding: 5px 10px;
+        background-color: rgb(225, 225, 225);
+        border-radius: 7px;
+        white-space: nowrap;
+        cursor: pointer;
+        margin: 0px 7px 0px 7px;
+    }
+
+    .tags:active{
+        background-color: black;
+        color: white;
+    }
+    
+    .edge-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 0;
+        background-color: white;
+        height: 55px;
+    }
+    
+    .scroll-btn{
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+        border: none;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .scroll-btn:hover{
+        background-color: rgb(225, 225, 225);
+    }
+}

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    margin-top: 30px;
+    padding-top: 80px;
+    padding-left: 90px;
+    padding-right: 10px;
+    height: fit-content;
+    font-family: Roboto;
+    background-color: rgb(245, 245, 245);
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Roboto;
+}
+
+@media (min-width:300px) and (max-width:800px) {
+    body{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 80px;
+    }
+}

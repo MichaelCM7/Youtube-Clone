@@ -1,0 +1,140 @@
+p{
+    font-family: Roboto;
+}
+
+.Video-preview{
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    width: 402px;
+    cursor: pointer;
+}
+
+.Thumbnail{
+    width: 168px;
+    height: fit-content;
+    position: relative;
+}
+
+.Thumbnail-picture{
+    width: 168px;
+    height: max-content;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 15px;
+}
+
+.Video-time{
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    font-size: 12px;
+    font-family: Roboto;
+    padding: 3px;
+    width: 25px;
+    position: absolute;
+    border-radius: 5px;
+    bottom: 8px;
+    right: 8px;
+}
+
+.Video-info{
+    margin-left: 15px;
+}
+
+.Video-title{
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.Video-stats{
+    font-size: 12px;
+    color: gray;
+}
+
+.Channel-info-block{
+    display: flex;
+    height: 30px;
+}
+
+.Channel-link{
+    align-items: center;
+}
+
+.Profile-pictures{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    align-items: center;
+    margin-top: 2.5px;
+}
+
+.Channel-name{
+    font-size: 12px;
+    color: grey;
+    margin: 10px;
+    margin-top: 8px;
+}
+
+.Status{
+    font-size: 12px;
+    color: rgb(64, 64, 64);
+    background-color: rgb(234, 234, 234);
+    border-radius: 3px;
+    width: 25px;
+    padding: 3px;
+}
+
+.Video-options{
+    border-radius: 50%;
+    border:none;
+    padding: 0;
+    opacity: 0;
+    object-fit: cover;
+    object-position: center;
+    width: 28px;
+    height: 28px;
+}
+
+.Options-icon{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.Checkmark{
+    font-size: 10px;
+    color: white;
+    background-color: rgb(64, 64, 64);                                               
+    border-radius: 50%;
+    padding: 0px 1px;
+}
+
+.Video-preview:hover{
+    .Video-options{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .Video-preview {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Thumbnail {
+        width: calc(100vw - 20px);
+    }
+
+    .Thumbnail-picture {
+        width: 100vw;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .Video-info {
+        margin-left: 0;
+        text-overflow:clip;
+        width: calc(100vw - 20px);
+    }
+}

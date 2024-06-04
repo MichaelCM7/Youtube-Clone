@@ -1,0 +1,164 @@
+.Video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+}
+
+@media (max-width:500px) {
+    .Video-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width:501px) and (max-width: 750px) {
+    .Video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:751px) and (max-width:999px ) {
+    .Video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:1000px) {
+    .Video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width:1000px) {
+    .video-title{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .video-author,
+    .video-stats{
+        font-size: 14px;
+    }
+}
+
+.thumbnail{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-title{
+    display: block;
+    margin-bottom: 15px;
+    font-family:  Roboto ;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.video-author,
+.video-stats{
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: rgb(96, 96,96);
+    text-decoration: none;
+    display: flex;
+    gap: 3px;
+}
+
+.Video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.Channel-picture{
+    position: relative;
+}
+
+.profile-picture{
+    width: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    left: 50px;
+}
+
+.thumbnail-row{
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.video-time{
+    font-family: Roboto;
+    position: absolute;
+    bottom: 8px;
+    right: 3px;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    font-size: 12px;
+    border-radius: 3px;
+    padding-left: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 4px;
+}
+
+.Channel-picture .channel-profile-details{
+    display: flex;
+    position: relative;
+    bottom: -5px;
+    left: 0;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+    border-radius: 10px;
+    width: 170px;
+    padding: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    border-color: rgb(221, 221, 221);
+    border-style: solid;
+    border-width: 1px;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.Channel-picture:hover .channel-profile-details{
+    opacity: 1;
+}
+
+.tooltip-prifile-img-blc{
+    width: 50px;
+}
+
+.tooltip-picture{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+}
+
+.tooltip-profile-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.tooltip-channel-title{
+    font-family: Roboto;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tooltip-channel-subcunt{
+    font-family: Roboto;
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+}

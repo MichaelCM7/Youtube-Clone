@@ -1,0 +1,399 @@
+p{
+    font-family: Roboto;
+}
+
+.Video-play-page{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Video-block{
+    height: 360px;
+    width: 640px;
+}
+
+.Video{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+.Video-title-lrg{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: bolder;
+    width: 85%;
+}
+
+.Details-and-actions{
+    width: 83%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content:space-between;
+    height: 36px;
+    gap: 20px;
+}
+
+.Video-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Channel-picture{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-position: center;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Channel-name-lrg{
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.Checkmark-lrg{
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+    color: white;
+    background-color: rgb(64, 64, 64);
+    border-radius: 50%;
+    padding: 0px 2.5px 2px 2.5px;
+    margin-left: 3px;
+}
+
+.Stats{
+    font-family: Roboto;
+    color: grey;
+    font-size: 12px;
+}
+
+.subscribe-button{
+    background-color: black;
+    color: white;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 18px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.Actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Rating{
+    display: flex;
+    height: 36px;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding-left: 3px;
+    margin-right: 10px;
+}
+
+.Likes{
+    display: flex;
+    align-items: center;
+    height: 26px;
+    border-right: solid;
+    border-right-color: black;
+    border-right-width: 1.5px;
+    border-right-color: gray;
+    border-top:none ;
+    border-left: none;
+    border-bottom: none;
+    padding-right: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.like-icon{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.like-count{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.Dislikes{
+    display: flex;
+    align-items: center;
+    height: 26px;
+    padding-right: 10px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.dislike-icon{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.Share{
+    display: flex;
+    height: 36px;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding-left: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.share-icon{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.share-text{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.Action-options{
+    display: flex;
+    height: 36px;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: none;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.options-icon{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.Video-description{
+    width: 620px;
+    padding: 10px 5px;
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    border: none;
+}
+
+.Comments-title{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Sort-by-button{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 40px;
+}
+
+.sort-by-icon{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.sort-by-text{
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+.Personal-comment-field{
+    display: flex;
+    align-items:start;
+}
+
+.personal-comment-space{
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: Roboto;
+    margin-top: 5px;
+    border: none;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(128, 128, 128, 0.5);
+    padding-bottom: 5px;
+    width: 570px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.public-comments{
+    display: flex;
+    align-items: start;
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.public-info-stats{
+    margin-left: 10px;
+}
+
+.comment-actions{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.comment-reaction-btn{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    padding: 5px 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.comment-reaction{
+    height: 20px;
+    width: 20px;
+}
+
+.reply-btn{
+    font-family: Roboto;
+    font-size: 12px;
+    border-radius: 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.reply-btn:hover, .comment-reaction-btn:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.comment-options{
+    border-radius: 50%;
+    border:none;
+    padding: 0;
+    opacity: 0;
+    object-fit: cover;
+    object-position: center;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 55px;
+}
+
+.public-comments:hover{
+    .comment-options{
+        opacity: 1;
+    }
+}
+
+.comment-profile-picture{
+    height: 40px;
+    width: 40px;
+    margin-top: 4px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.video-frame {
+    width: 100%;
+    height: 100%;
+}
+
+.first-details {
+    display: flex;
+    gap: 20px;
+}
+
+
+@media (min-width:300px) and (max-width:800px) {
+    .video-frame {
+        width: 100vw;
+        height: 225px;
+    }
+
+    .Video-play-page{
+        padding: 5px;
+        margin-left: -10px;
+        margin-right: -10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Video-recommendatins{
+        margin-top: 5px;
+    }
+
+    .Video-block{
+        height: 100%;
+        width: 100vw;
+    }
+
+    .Video-description{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .Details-and-actions{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .public-comments{
+        margin-bottom: 20px;
+    }
+
+    .personal-comment-space{
+        width: 100%;
+    }
+}
