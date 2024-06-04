@@ -1,4 +1,4 @@
-# Youtube Clone With React - By Michael and Wendy
+# Youtube Clone With React
 
 This project was bootstrapped with CreateReactApp.
 
