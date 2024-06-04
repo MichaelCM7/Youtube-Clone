@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Youtube Clone With React - By Michael and Wendy
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
