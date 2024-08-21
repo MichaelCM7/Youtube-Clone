@@ -5,7 +5,7 @@ export default function Tags() {
   return (
     <section className="tags-block" id="tags-block">
         <div>
-                <button className="tags">
+                <button className="tags" style={{ backgroundColor: "black", color: "white" }}>
                     All
                 </button>
         </div>

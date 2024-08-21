@@ -13,7 +13,7 @@ export default function Main() {
     useEffect(() => {
         const fetchVideos = async () => {
             try {
-                const response = await fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${apiKey}&part=snippet&q=&maxResults=50&type=video`)
+                const response = await fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${apiKey}&part=snippet&q=&maxResults=10&type=video`)
                 console.log(response);
                 if (!response.ok) {
                     return alert("Network error occured!");

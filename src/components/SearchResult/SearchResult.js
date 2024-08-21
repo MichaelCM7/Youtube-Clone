@@ -56,15 +56,16 @@ export default function SearchResult({thumbnail, title, channelTitle, descriptio
 
   return (
     <main>
-
         <Tags />
+
         <div className="Video-preview-results">
-            <div className="thumbnail-search-results">
+            <div className='thumbnail-search-results'>
                 <img className="Thumbnail-picture-results" src={thumbnail} />
-                <p className="Video-time">
+                <p className="video-time">
                     {duration}
                 </p>
             </div>
+
             <div className="Video-info-results">
                 <div className="Title-block">
                     <p className="Video-title-results">

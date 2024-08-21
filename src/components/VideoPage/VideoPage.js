@@ -26,6 +26,11 @@ export default function VideoPage() {
 
     const [showMore, setShowMore] = useState(false)
 
+    const stripHtml = (html) => {
+        const doc = new DOMParser().parseFromString(html, 'text/html');
+        return doc.body.textContent || "";
+    };
+
     useEffect(() => {
         const fetchVideoDetails = async () => {
             const response = await fetch(`https://www.googleapis.com/youtube/v3/videos?key=${apiKey}&part=snippet,statistics&id=${id}`)
@@ -213,7 +218,7 @@ export default function VideoPage() {
                             profileImg = {comment.snippet.topLevelComment.snippet.authorProfileImageUrl}
                             displayName = { comment.snippet.topLevelComment.snippet.authorDisplayName }
                             likeCount = { comment.snippet.topLevelComment.snippet.likeCount }
-                            textDisplay = { comment.snippet.topLevelComment.snippet.textDisplay }
+                            textDisplay = { stripHtml(comment.snippet.topLevelComment.snippet.textDisplay) }
                             replyCount = { comment.snippet.totalReplyCount }
                             publishedAt = { findTimeDifference(comment.snippet.topLevelComment.snippet.publishedAt) }
                         />

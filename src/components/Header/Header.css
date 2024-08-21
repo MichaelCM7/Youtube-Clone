@@ -1,5 +1,5 @@
 .Header{
-    height: 55px;
+    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -40,7 +40,7 @@
 
 .searchbar{
     flex: 1;
-    height: 26px;
+    height: 35px;
     padding-left: 14px;
     font-size: 16px;
     border: 1px solid rgb(192, 192, 192);
@@ -61,7 +61,7 @@
     align-items: center;
     position: relative;
     width: 60px;
-    height: 30px;
+    height: 35px;
     background-color: rgb(240, 240, 240);
     border-width: 1px;
     border-style: solid;
@@ -114,8 +114,7 @@
 }
 
 .search-icon{
-    height: 18px;
-    opacity: 0.4;
+    height: 20px;
 }
 
 .voicesrch-icon{
@@ -126,8 +125,9 @@
 }
 
 .Right-section{
-    margin-right: 20px;
+    margin-right: 40px;
     display: flex;
+    gap: 20px;
     width: 120px;
     justify-content: space-between;
     align-items: center;

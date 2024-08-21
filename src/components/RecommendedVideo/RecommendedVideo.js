@@ -21,7 +21,7 @@ export default function RecommendedVideo({ thumbnail, channelTitle, title, publi
         } else if (monthsDifference > 0) {
             return `${monthsDifference} months ago`
         } else {
-            return `${daysDifference} ${daysDifference == 1 ? "day" : "days"} ago`
+            return `${daysDifference} ${daysDifference === 1 ? "day" : "days"} ago`
         }
     }
 

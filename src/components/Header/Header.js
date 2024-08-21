@@ -27,22 +27,10 @@ export default function Header() {
         }
     }
 
-    const switchSidebar = () => {
-        const currentState = document.getElementById("sidebar");
-
-        if (currentState.style.display === "none") {
-            currentState.style.display = "block"; 
-            document.getElementById("sidebar").style.width = "fit-content";
-        } else {
-            currentState.style.display = "none";
-            document.getElementById("sidebar").style.width = 0;
-        } 
-    }
-
   return (
     <header className="Header">
         <div className="Left-section">
-            <img className="hamburger-menu" src={menuIcon} onClick={() => switchSidebar()} />
+            <img className="hamburger-menu" src={menuIcon} />
             <img className="youtube-logo" src={ytLogo} />
         </div>
 

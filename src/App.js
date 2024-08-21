@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 import Main from "./components/Main/Main";
-import Layout from "./components/Layout";
+import Layout from "./components/Layout/Layout";
 import Search from "./components/Search";
 import VideoPage from "./components/VideoPage/VideoPage";
 import NoLayout from "./components/NoLayout"

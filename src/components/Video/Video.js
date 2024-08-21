@@ -77,24 +77,7 @@ export default function Video({thumbnail, title, channelTitle, videoId, publishT
 
                 <div className="Video-info-grid">
                     <div className="Channel-picture">
-                        <img className="profile-picture" src={channelDetails} />
-                        <div className="channel-profile-details">
-                                <div className="tooltip-profile-img-blc">
-                                    <img className="profile-picture" src={channelDetails} />
-                                </div>
-                                <div className="tooltip-profile-info">
-                                    <div >
-                                        <a className="tooltip-channel-title" href= { `https://www.youtube.com/@${channelTitle}` }>
-                                            {channelTitle}
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <p className="tooltip-channel-subcunt">
-                                            {channelSubscriberCount} subscribers
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>    
+                        <img className="profile-picture" src={channelDetails} /> 
                     </div>
 
                     <div className="Video-info">

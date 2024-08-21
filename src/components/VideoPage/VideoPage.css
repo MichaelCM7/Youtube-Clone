@@ -3,7 +3,9 @@ p{
 }
 
 .Video-play-page{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
     justify-content: space-between;
 }
 
@@ -351,6 +353,12 @@ p{
     gap: 20px;
 }
 
+.moreButton {
+    background-color: transparent;   
+    border: none;
+    outline: none;
+
+}
 
 @media (min-width:300px) and (max-width:800px) {
     .video-frame {
@@ -367,7 +375,7 @@ p{
         justify-content: center;
     }
 
-    .Video-recommendatins{
+    .Video-recommendations{
         margin-top: 5px;
     }
 

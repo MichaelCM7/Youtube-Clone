@@ -4,114 +4,37 @@
 }
 
 .sidebar {
-    display: none;
+    margin-left: -80px;
+    position: fixed;
+    top: 60px;
 }
 
-@media (max-width:600px) {
-    .sidebar {
-        width: 100%;
-        height: 100%;
-    }
+.sidebar-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
 }
 
-@media (max-width:1200px) {
-    .sidebar{
-        position: fixed;
-        top: 55px;
-        left: 0;
-        bottom: 0;
-        background-color: white;
-        width: 64px;
-        padding: 5px 2px 0px 2px;
-        border-right: 1px solid rgb(230, 230, 230);
-        z-index: 200;
-    }
-    
-    .sidebar-link{
-        display: flex;
-        flex-direction: column;
-        height: 45px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-    }
-    
-    .sidebar-link:hover{
-        background-color: rgb(216, 216, 216);
-    }
-    
-    .sidebar-icon-ph{
-        display: flex;
-        justify-content: center;
-        height: 30px;
-    }
-    
-    .sidebar-icon{
-        height: 23px;
-        object-fit: cover;
-        object-position: center;
-    }
-    
-    .sidebar-icon-name{
-        height: 15px;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .name{
-        font-family: Roboto;
-        font-size: 9px; 
-    }    
+.sidebar-link:hover{
+    background-color: rgb(216, 216, 216);
 }
 
-@media (min-width:1200px) {
-    .sidebar{
-        position: fixed;
-        top: 55px;
-        left: 0;
-        bottom: 0;
-        background-color: white;
-        width: 180px;
-        padding: 5px 10px;
-        border-right: 1px solid rgb(230, 230, 230);
-        z-index: 200;
-    }
-
-    .sidebar-link{
-        display: flex;
-        flex-direction: row;
-        height: 10px;
-        padding: 10px 15px;
-        align-items: center;
-        cursor: pointer;
-        border-radius: 10px;
-        margin: 10px 0px 10px 0px;
-    }
-
-    .sidebar-link:hover{
-        background-color: rgb(216, 216, 216);
-    }
-    
-    .sidebar-icon-ph{
-        margin-right: 30px;
-    }
-
-    .sidebar-icon{
-        height: 23px;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .sidebar-icon-name{
-        height: 15px;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .name{
-        font-family: Roboto;
-        font-size: 12px; 
-    }    
+.sidebar-icon{
+    height: 23px;
+    object-fit: cover;
+    object-position: center;
 }
+
+.sidebar-icon-name{
+    height: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.name{
+    font-family: Roboto;
+    font-size: 10px; 
+}    
